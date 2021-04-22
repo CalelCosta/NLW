@@ -114,7 +114,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const episodes = data.map(episode => {
     return {
       id: episode.id,
-      tittle: episode.title,
+      title: episode.title,
       thumbnail: episode.thumbnail,
       members: episode.members,
       publishedAt: format(parseISO(episode.published_at),'d MMM yy', { locale: ptBR }),
